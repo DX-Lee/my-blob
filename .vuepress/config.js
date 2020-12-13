@@ -1,7 +1,7 @@
 const sidebar = require('./sidebar')
 module.exports = {
-  "title": "blog",
-  "description": "this is a blog",
+  "title": "ldx的博客",
+  "description": "welcome to my blog",
   "dest": "public",
   "head": [
     [

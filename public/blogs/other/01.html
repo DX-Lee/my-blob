@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>前端跨域解决方案 | ldx的博客</title>
+    <meta name="generator" content="VuePress 1.5.4">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="description" content="welcome to my blog">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <link rel="preload" href="/assets/css/0.styles.1157b0c6.css" as="style"><link rel="preload" href="/assets/js/app.9b63aec2.js" as="script"><link rel="preload" href="/assets/js/3.c4d6b3f7.js" as="script"><link rel="preload" href="/assets/js/1.eecb06aa.js" as="script"><link rel="preload" href="/assets/js/21.fb93e8dc.js" as="script"><link rel="prefetch" href="/assets/js/10.a850a7fe.js"><link rel="prefetch" href="/assets/js/11.35e79caa.js"><link rel="prefetch" href="/assets/js/12.5543ee39.js"><link rel="prefetch" href="/assets/js/13.8cdf9bed.js"><link rel="prefetch" href="/assets/js/14.77b1bf79.js"><link rel="prefetch" href="/assets/js/15.01895a58.js"><link rel="prefetch" href="/assets/js/16.24c4fb6e.js"><link rel="prefetch" href="/assets/js/17.f3f9f22c.js"><link rel="prefetch" href="/assets/js/18.6e46f422.js"><link rel="prefetch" href="/assets/js/19.e394d77d.js"><link rel="prefetch" href="/assets/js/20.640b9e17.js"><link rel="prefetch" href="/assets/js/22.d860a212.js"><link rel="prefetch" href="/assets/js/23.f87859ab.js"><link rel="prefetch" href="/assets/js/24.4a6f32bb.js"><link rel="prefetch" href="/assets/js/25.b7b7483e.js"><link rel="prefetch" href="/assets/js/26.014cb430.js"><link rel="prefetch" href="/assets/js/27.ff58509d.js"><link rel="prefetch" href="/assets/js/28.adb15ad0.js"><link rel="prefetch" href="/assets/js/4.c0e4314d.js"><link rel="prefetch" href="/assets/js/5.07fb841a.js"><link rel="prefetch" href="/assets/js/6.8cda991c.js"><link rel="prefetch" href="/assets/js/7.dc87b874.js"><link rel="prefetch" href="/assets/js/8.67a7c995.js"><link rel="prefetch" href="/assets/js/9.75571bbb.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.1157b0c6.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-2d5f533b><div data-v-2d5f533b><div id="loader-wrapper" class="loading-wrapper" data-v-d48f4d20 data-v-2d5f533b data-v-2d5f533b><div class="loader-main" data-v-d48f4d20><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-64685f0e data-v-2d5f533b data-v-2d5f533b><h3 class="title" style="display:none;" data-v-64685f0e data-v-64685f0e>ldx的博客</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-64685f0e data-v-64685f0e><input type="password" value="" data-v-64685f0e> <span data-v-64685f0e>Konck! Knock!</span> <button data-v-64685f0e>OK</button></label> <div class="footer" style="display:none;" data-v-64685f0e data-v-64685f0e><span data-v-64685f0e><i class="iconfont reco-theme" data-v-64685f0e></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-64685f0e>vuePress-theme-reco</a></span> <span data-v-64685f0e><i class="iconfont reco-copyright" data-v-64685f0e></i> <a data-v-64685f0e><span data-v-64685f0e>ldx</span>
+            
+          <span data-v-64685f0e>2017 - </span>
+          2020
+        </a></span></div></div> <div class="hide" data-v-2d5f533b><header class="navbar" data-v-2d5f533b><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.png" alt="ldx的博客" class="logo"> <span class="site-name">ldx的博客</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      知识汇总
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/算法/" class="nav-link"><i class="iconfont undefined"></i>
+  算法
+</a></li><li class="dropdown-item"><!----> <a href="/categories/浏览器相关/" class="nav-link"><i class="iconfont undefined"></i>
+  浏览器相关
+</a></li><li class="dropdown-item"><!----> <a href="/categories/css/" class="nav-link"><i class="iconfont undefined"></i>
+  css
+</a></li><li class="dropdown-item"><!----> <a href="/categories/随笔/" class="nav-link"><i class="iconfont undefined"></i>
+  随笔
+</a></li><li class="dropdown-item"><!----> <a href="/categories/面试相关/" class="nav-link"><i class="iconfont undefined"></i>
+  面试相关
+</a></li><li class="dropdown-item"><!----> <a href="/categories/JS/" class="nav-link"><i class="iconfont undefined"></i>
+  JS
+</a></li><li class="dropdown-item"><!----> <a href="/categories/HTML/" class="nav-link"><i class="iconfont undefined"></i>
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/categories/杂项/" class="nav-link"><i class="iconfont undefined"></i>
+  杂项
+</a></li><li class="dropdown-item"><!----> <a href="/categories/性能优化/" class="nav-link"><i class="iconfont undefined"></i>
+  性能优化
+</a></li><li class="dropdown-item"><!----> <a href="/categories/网络协议/" class="nav-link"><i class="iconfont undefined"></i>
+  网络协议
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Vue/" class="nav-link"><i class="iconfont undefined"></i>
+  Vue
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签索引
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间线
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Contact
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/DX-Lee" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-2d5f533b></div> <aside class="sidebar" data-v-2d5f533b><div class="personal-info-wrapper" data-v-ca798c94 data-v-2d5f533b><img src="/avatar.png" alt="author-avatar" class="personal-img" data-v-ca798c94> <h3 class="name" data-v-ca798c94>
+    ldx
+  </h3> <div class="num" data-v-ca798c94><div data-v-ca798c94><h3 data-v-ca798c94>13</h3> <h6 data-v-ca798c94>Article</h6></div> <div data-v-ca798c94><h3 data-v-ca798c94>7</h3> <h6 data-v-ca798c94>Tag</h6></div></div> <hr data-v-ca798c94></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      知识汇总
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/算法/" class="nav-link"><i class="iconfont undefined"></i>
+  算法
+</a></li><li class="dropdown-item"><!----> <a href="/categories/浏览器相关/" class="nav-link"><i class="iconfont undefined"></i>
+  浏览器相关
+</a></li><li class="dropdown-item"><!----> <a href="/categories/css/" class="nav-link"><i class="iconfont undefined"></i>
+  css
+</a></li><li class="dropdown-item"><!----> <a href="/categories/随笔/" class="nav-link"><i class="iconfont undefined"></i>
+  随笔
+</a></li><li class="dropdown-item"><!----> <a href="/categories/面试相关/" class="nav-link"><i class="iconfont undefined"></i>
+  面试相关
+</a></li><li class="dropdown-item"><!----> <a href="/categories/JS/" class="nav-link"><i class="iconfont undefined"></i>
+  JS
+</a></li><li class="dropdown-item"><!----> <a href="/categories/HTML/" class="nav-link"><i class="iconfont undefined"></i>
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/categories/杂项/" class="nav-link"><i class="iconfont undefined"></i>
+  杂项
+</a></li><li class="dropdown-item"><!----> <a href="/categories/性能优化/" class="nav-link"><i class="iconfont undefined"></i>
+  性能优化
+</a></li><li class="dropdown-item"><!----> <a href="/categories/网络协议/" class="nav-link"><i class="iconfont undefined"></i>
+  网络协议
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Vue/" class="nav-link"><i class="iconfont undefined"></i>
+  Vue
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签索引
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间线
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Contact
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/DX-Lee" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-64685f0e data-v-2d5f533b><h3 class="title" style="display:none;" data-v-64685f0e data-v-64685f0e>前端跨域解决方案</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-64685f0e data-v-64685f0e><input type="password" value="" data-v-64685f0e> <span data-v-64685f0e>Konck! Knock!</span> <button data-v-64685f0e>OK</button></label> <div class="footer" style="display:none;" data-v-64685f0e data-v-64685f0e><span data-v-64685f0e><i class="iconfont reco-theme" data-v-64685f0e></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-64685f0e>vuePress-theme-reco</a></span> <span data-v-64685f0e><i class="iconfont reco-copyright" data-v-64685f0e></i> <a data-v-64685f0e><span data-v-64685f0e>ldx</span>
+            
+          <span data-v-64685f0e>2017 - </span>
+          2020
+        </a></span></div></div> <div data-v-2d5f533b><main class="page"><div class="page-title" style="display:none;"><h1 class="title">前端跨域解决方案</h1> <div data-v-3b7f5bdf><i class="iconfont reco-account" data-v-3b7f5bdf><span data-v-3b7f5bdf>ldx</span></i> <i class="iconfont reco-date" data-v-3b7f5bdf><span data-v-3b7f5bdf>2020-11-30</span></i> <!----> <i class="iconfont reco-tag tags" data-v-3b7f5bdf><span class="tag-item" data-v-3b7f5bdf>跨域</span></i></div></div> <div class="theme-reco-content content__default" style="display:none;"><h3 id="一-什么是跨域"><a href="#一-什么是跨域" class="header-anchor">#</a> 一. 什么是跨域？</h3> <p>首先要知道浏览器的<strong>同源策略</strong>，当 两个url的<strong>协议名</strong> + <strong>域名</strong> + <strong>端口号</strong> 都相同时，浏览器才认为它们是同源的，否则就是非同源。<strong>同源策略</strong> 是为了限制窗口和iframe之间的互相访问，保护用户的信息安全。</p> <p>同源策略限制的内容包括：</p> <ol><li>cookie，LocalStorage，IndexDB等存储内容</li> <li>DOM节点访问</li> <li>AJAX请求可以发送，但是浏览器会拦截</li></ol> <div class="custom-block tip"><p>​	如果窗口是非同源的，我们无法访问其中文档，变量等任何东西，但是有一个例外是location：我们可以修改它，但是不能读取。</p></div> <h3 id="二-如何解决跨域"><a href="#二-如何解决跨域" class="header-anchor">#</a> 二. 如何解决跨域？</h3> <p><strong>1. JSONP</strong></p> <p>原理：利用了script标签没有跨域限制，通过发送带有callback参数的get请求的url，服务端通过接口返回的数据拼接到callback参数中返回，由浏览器去执行，从而拿到callback返回的数据。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;script&gt;
+	let script = document.createElement('script')
+	script.src = 'http://www.server.com?jsonp=callback'
+	document.body.appendChild(script)
+	window[callback] = function (data) {
+		console.log(data)
+	}
+&lt;/script&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p>优点：兼容性好，可用于解决主流浏览器的跨域数据问题</p> <p>缺点：只能发送get请求，不安全可能会遭受xss攻击</p> <p><strong>2.CORS</strong></p> <p>CORS 全称是：跨域资源共享（Cross-origin resource sharing）,它允许浏览器向跨域的服务器发送AJAX请求，从而克服了AJAX的同源限制。</p> <p>CORS需要浏览器和后端同时支持，现在浏览器都会自动进行CORS通信，所以关键是后端的设置。CORS通信和普通的AJAX请求没有差别，只是浏览器发现跨域的AJAX请求，就会自动添加上一些附加的头信息，有时还会多发出一次附加请求，用户是感知不到的。CORS的请求分为两种 简单请求的非简单请求。</p> <p>（1）简单请求</p> <p>​	满足以下两大条件就属于简单请求</p> <p>请求方法是以下三种方法之一：</p> <blockquote><p>HEAD</p> <p>GET</p> <p>POST</p></blockquote> <p>HTTP的头信息不超出以下几种字段：</p> <blockquote><p>Accept</p> <p>Accept-Language</p> <p>Content-Language</p> <p>Content-Type: 只限于三个值 text/plain， application/x-www-form-urlencoded，multipart/form-data</p></blockquote> <p>凡是不满足上面两个条件的都属于非简单请求。</p> <p>简单的说<strong>简单请求就是简单的HTTP方法和HTTP头信息的结合</strong></p> <p>当浏览器发现跨域的AJAX请求时一个简单请求时，会自动在头信息中增加一个Origin字段，表示请求来自哪个域（协议名+域名+端口号），服务器根据这个值来决定是否同意这次请求。如果Origin指定的源在服务器的白名单上，则返回的HTTP回应头信息中会多几个字段：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>Access-Control-Allow-Origin:  该字段是必须的，它的值要么包括请求时Origin字段中的值，要么为 * ，表示接受来自任何域的请求
+Access-Control-Allow-Expose-Headers: 可选，CORS请求时XMLHttpRequest的getRespnseHeader() 方法只能拿到 Cache-Control, Content-Language,Content-Type,Last-Modified,Expires,Pragma,如何想拿到其他字段就必须要这的头信息上指定
+Access-Control-Allow-Credentials: 可选，表示是否允许发送Cookie
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><div class="custom-block tip"><p>要想在请求中携带cookie 必须设置withCredentials这个属性为true，否则就算服务器要求发送Cookie，浏览器也不会发送。另外需要注意的是如果服务器要求浏览器发送cookie, Access-Control-Allow-Origin 就不能设置为 *</p></div> <p>非简单请求就是想服务器提出特殊要求的请求，比如说方法为PUT ,DELETE 或者 Content-Type 的字段类型是 application/json</p> <p>非简单请求会在正式通信前增加一次查询请求，被称为’预检请求‘。浏览器先询问服务器，当前网页所在的域名是否在服务器的许可名单之中，以及可以使用哪些 HTTP 方法和头信息字段。只有得到肯定答复，浏览器才会发出正式的<code>XMLHttpRequest</code>请求，否则就报错。目的是为了防止这些新增的请求对传统的没有cors支持的服务器形成压力，给它一个提前拒绝的机会。</p> <p>’预检请求‘的请求方法是OPTIONS, 表示这个请求时用来询问的，头信息中会加上一个关键字段Origin, 表示请求的来源。</p> <p>除了Origin之外，’预检请求‘的头信息还包括两个字段：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>Access-Control-Request-Method: 该字段是必须的，用来列出浏览器的CORS会用哪些方法
+Access-Control-Request-Headers: 用来指定浏览器CORS会额外发送的头信息字段
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>服务器收到’预见请求‘的回应后，会检查Origin, Access-Control-Request-Method,Access-Control-Request-Headers,允许确认跨域后就可以做出回应。返回的HTTP回应中会带有 Access-Control-Allow-Origin，还包括以下其他字段</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>Access-Control-Allow-Methods: 表示允许请求的方法
+Access-Control-Allow-Headers: 如果浏览器请求包括Access-Control-Request-Headers字段，则Access-Control-Allow-Headers字段是必需的。它也是一个逗号分隔的字符串，表明服务器支持的所有头信息字段，不限于浏览器在“预检”中请求的字段
+Access-Control-Allow-Credentials: 与简单请求含义相同
+Access-Control-Max-Age: 可选，表示预检请求的有效期，在此期间内不用在发送另外的预检请求
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>一旦服务器通过了“预检”请求，以后每次浏览器正常的 CORS 请求，就都跟简单请求一样，会有一个<code>Origin</code>头信息字段。服务器的回应，也都会有一个<code>Access-Control-Allow-Origin</code>头信息字段。</p> <p>如果没有通过，则返回正常的不包含CORS头信息的HTTP回应, 或者明确表示请求不符合条件。浏览器就会认定服务器不通过预见请求，触发一次错误，被<code>XMLHttpRequest</code>对象的<code>onerror</code>回调函数捕获。</p> <p>CORS比JSONP更加强大，支持所有类型的HTTP请求。</p> <p><strong>3. postMessage</strong></p> <p>postMessage 允许不同源窗口之间进行有限的通信。前提需要拿到对方的引用</p> <p>postMessage(data, targetOrigin)</p> <p>targetOrigin 指定目标窗口的源，只有当窗口的源时给定的值才能接受到数据。targetOrigin 是一种安全措施，当目标窗口是非同源的时候，我们无法拿到它的location的值，即我们不知道窗口打开的是哪个网站。指定targetOrigin 可以保证窗口处于我们期望中的网站时接收数据。如果不希望做检查可以设置为 * 。</p> <p>例如 http:// localhost: 3000/a.html 向 http: //localhost: 4000/b.html 传递信息</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// a.html</span>
+<span class="token operator">&lt;</span>iframe src<span class="token operator">=</span><span class="token string">&quot;http://localhost:4000/b.html&quot;</span> frameborder<span class="token operator">=</span><span class="token string">&quot;0&quot;</span> name<span class="token operator">=</span><span class="token string">'frame'</span> onload<span class="token operator">=</span><span class="token string">'onload'</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>iframe<span class="token operator">&gt;</span>
+   <span class="token operator">&lt;</span>script<span class="token operator">&gt;</span>
+    	<span class="token keyword">function</span> <span class="token function">load</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> frame <span class="token operator">=</span> window<span class="token punctuation">.</span>frames<span class="token punctuation">.</span>frame
+    frame<span class="token punctuation">.</span><span class="token function">postMessage</span><span class="token punctuation">(</span><span class="token string">'hello'</span><span class="token punctuation">,</span> <span class="token string">'http://localhost:4000'</span><span class="token punctuation">)</span>
+	<span class="token punctuation">}</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span> 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><div class="language- line-numbers-mode"><pre class="language-text"><code>// b.html
+window.onmessage = (e) =&gt; {
+ 	// 传递的事件对象e中
+ 	// e.data: 'hello'
+ 	// e.origin: 'http://localhost:3000/a.html'
+ 	// e.source 发送方窗口的引用
+	console.log(e.data)
+	// e.source.postMessage('hi', '*')
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p><strong>4. document.domain</strong></p> <p>如果两个窗口的二级域相同，如：a.site.com, b.site.com, c.site.com，我们可以通过在每个窗口设置 <strong>document.domain = &quot;site.com&quot;</strong> 使浏览器忽略该差异，将它们视为“同源”，这样就可以无限制的交互了。但是仅限于二级域名相同的情况。</p> <p><strong>5. location.hash + iframe</strong></p> <p>实现原理: 利用非同源窗口 可以写入location的特例，通过监听hash值的变化传递信息。</p> <p>例如 a.html 向 b.html 跨域通信，需借助一个中间页c.html。a c为同源</p> <div class="language- line-numbers-mode"><pre class="language-text"><code> // a.html
+  &lt;iframe src=&quot;http://localhost:4000/b.html#hello&quot;&gt;&lt;/iframe&gt;
+  &lt;script&gt;
+  // 传递的值放在hash中
+    window.onhashchange = function () { //检测hash的变化
+      console.log(location.hash);
+    }
+  &lt;/script&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><div class="language- line-numbers-mode"><pre class="language-text"><code>// b.html
+ console.log(location.hash);
+  let iframe = document.createElement('iframe');
+  iframe.src = 'http://localhost:3000/c.html#hi';
+  document.body.appendChild(iframe);
+
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><div class="language- line-numbers-mode"><pre class="language-text"><code>// c.html
+&lt;script&gt;
+    window.parent.parent.location.hash = location.hash 
+    //c 可通过 window.parent.parent访问到 a
+  &lt;/script&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p><strong>6.  window.name + iframe</strong></p> <p>实现原理：window 对象的 name 属性是一个很特别的属性，当该 window 的 location 变化，然后重新加载，它的 name 属性可以依然保持不变。</p> <p>例如 a 向 c 跨域通信，借助中间页b 。a 和 b 同源</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// a.html
+&lt;iframe
+  src=&quot;http://localhost:4000/name/c.html&quot;
+  frameborder=&quot;0&quot;
+  onload=&quot;load()&quot;
+  id=&quot;iframe&quot;
+&gt;&lt;/iframe&gt;
+&lt;script&gt;
+  let first = true;
+  // onload事件会触发2次，第1次加载跨域页，并留存数据于window.name
+  function load() {
+    if (first) {
+      // 第1次onload(跨域页)成功后，切换到同域代理页面
+      iframe.src = &quot;http://localhost:3000/name/b.html&quot;;
+      first = false;
+    } else {
+      // 第2次onload(同域b.html页)成功后，读取同域window.name中数据
+      console.log(iframe.contentWindow.name);
+    }
+  }
+&lt;/script&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><div class="language- line-numbers-mode"><pre class="language-text"><code>// c.html
+&lt;script&gt;
+	window.name = 'hello'
+&lt;/script&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><div class="language- line-numbers-mode"><pre class="language-text"><code>// b.html
+不需要做什么操作，为空即可
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p><strong>7. node服务器中间件代理</strong></p> <p>跨域原理：'同源策略'是浏览器才有的，服务器之间不需要遵循同源策略。</p> <p>我们需要一个代理服务器，它需要做一下事情：</p> <ul><li>接收客户端请求</li> <li>将请求转发给服务器</li> <li>拿到响应的数据</li> <li>将数据发送给客户端</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// index.html(http://127.0.0.1:5500)
+ &lt;script src=&quot;https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script&gt;
+      $.ajax({
+        url: 'http://localhost:3000',
+        type: 'post',
+        data: { name: 'xiamen', password: '123456' },
+        contentType: 'application/json;charset=utf-8',
+        success: function(result) {
+          console.log(result) // {&quot;title&quot;:&quot;fontend&quot;,&quot;password&quot;:&quot;123456&quot;}
+        },
+        error: function(msg) {
+          console.log(msg)
+        }
+      })
+     &lt;/script&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><div class="language- line-numbers-mode"><pre class="language-text"><code>/ server1.js 代理服务器(http://localhost:3000)
+const http = require('http')
+// 第一步：接受客户端请求
+const server = http.createServer((request, response) =&gt; {
+  // 代理服务器，直接和浏览器直接交互，需要设置CORS 的首部字段
+  response.writeHead(200, {
+    'Access-Control-Allow-Origin': '*',
+    'Access-Control-Allow-Methods': '*',
+    'Access-Control-Allow-Headers': 'Content-Type'
+  })
+  // 第二步：将请求转发给服务器
+  const proxyRequest = http
+    .request(
+      {
+        host: '127.0.0.1',
+        port: 4000,
+        url: '/',
+        method: request.method,
+        headers: request.headers
+      },
+      serverResponse =&gt; {
+        // 第三步：收到服务器的响应
+        var body = ''
+        serverResponse.on('data', chunk =&gt; {
+          body += chunk
+        })
+        serverResponse.on('end', () =&gt; {
+          console.log('The data is ' + body)
+          // 第四步：将响应结果转发给浏览器
+          response.end(body)
+        })
+      }
+    )
+    .end()
+})
+server.listen(3000, () =&gt; {
+  console.log('The proxyServer is running at http://localhost:3000')
+})
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br></div></div><div class="language- line-numbers-mode"><pre class="language-text"><code>/ server2.js(http://localhost:4000)
+const http = require('http')
+const data = { title: 'fontend', password: '123456' }
+const server = http.createServer((request, response) =&gt; {
+  if (request.url === '/') {
+    response.end(JSON.stringify(data))
+  }
+})
+server.listen(4000, () =&gt; {
+  console.log('The server is running at http://localhost:4000')
+})
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><p>注意：浏览器向代理服务器之间需遵循同源原则，需要跨域。</p> <p><strong>8.nginx反向代理</strong></p> <p>实现原理：类似于node服务器，使用nginx反向代理实现跨域，是最简单的跨域方式。只需要修改nginx的配置即可解决跨域问题，支持所有浏览器，支持session，不需要修改任何代码，并且不会影响服务器性能。</p> <p>nginx 配置</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// proxy服务器
+server {
+    listen       81;
+    server_name  www.domain1.com;
+    location / {
+        proxy_pass   http://www.domain2.com:8080;  #反向代理
+        proxy_cookie_domain www.domain2.com www.domain1.com; #修改cookie里域名
+        index  index.html index.htm;
+
+        # 当用webpack-dev-server等中间件代理接口访问nignx时，此时无浏览器参与，故没有同源限制，下面的跨域配置可不启用
+        add_header Access-Control-Allow-Origin http://www.domain1.com;  #当前端只跨域不带cookie时，可为*
+        add_header Access-Control-Allow-Credentials true;
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><p><strong>9.websocket</strong></p> <p>websocket 是HTML5的一个持久化的协议，它实现了浏览器与服务器的全双工通信，同时也是跨域的一种解决方案。WebSocket和HTTP都是应用层协议，都基于 TCP 协议。但是 <strong>WebSocket 是一种双向通信协议，在建立连接之后，WebSocket 的 server 与 client 都能主动向对方发送或接收数据</strong>。同时，WebSocket 在建立连接时需要借助 HTTP 协议，连接建立好了之后 client 与 server 之间的双向通信就与 HTTP 无关了。</p> <p>原生WebSocket API使用起来不太方便，我们使用<code>Socket.io</code>，它很好地封装了webSocket接口，提供了更简单、灵活的接口，也对不支持webSocket的浏览器提供了向下兼容。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// client.html
+let socket = new WebSocket('http://localhost:3000')
+socket.onopen = function() {
+	socket.send('hello') // 向服务器发送数据
+}
+socket.onmessage = function (e) {
+	console.log(e.data) // hi 接收服务器传来的参数
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><div class="language- line-numbers-mode"><pre class="language-text"><code>// server.js
+let express = require('express');
+let app = express();
+let WebSocket = require('ws');//记得安装ws
+let wss = new WebSocket.Server({port: 3000})
+wss.on('connection', function (ws) {
+	ws.on('message', function (data) {
+		console.log(data) // hello
+		ws.send('hi')
+	})
+})
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><h3 id="三-总结"><a href="#三-总结" class="header-anchor">#</a> 三. 总结</h3> <ol><li>JSONP 只能发送get请求，优势在于支持旧的浏览器，以及向不支持CORS的网站请求数据</li> <li>CORS 支持所有类型的HTTP请求，是跨域HTTP的根本解决方案</li> <li>node和nginx都是利用服务器之间没有同源限制</li> <li>window.name，window.location hash，window.domain 可以进行有限的通信，利用postMessage可以实现不同源的窗口间通信，前提需要拿到对方的引用。</li></ol></div> <footer class="page-edit" style="display:none;"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">12/2/2020, 10:09:22 PM</span></div></footer> <!----> <!----> <!----></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div></div></div>
+    <script src="/assets/js/app.9b63aec2.js" defer></script><script src="/assets/js/3.c4d6b3f7.js" defer></script><script src="/assets/js/1.eecb06aa.js" defer></script><script src="/assets/js/21.fb93e8dc.js" defer></script>
+  </body>
+</html>
