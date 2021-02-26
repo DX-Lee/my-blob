@@ -1,7 +1,7 @@
 const sidebar = require('./sidebar')
 module.exports = {
-  "title": "blog",
-  "description": "this is a blog",
+  "title": "ldx的博客",
+  "description": "welcome to my blog",
   "dest": "public",
   "head": [
     [
@@ -94,7 +94,7 @@ module.exports = {
     "searchMaxSuggestions": 10,
     "lastUpdated": "Last Updated",
     "author": "ldx",
-    "authorAvatar": "/avatar.png",
+    "authorAvatar": "/avatar.jpg",
     "record": "xxxx",
     "startYear": "2017"
   },

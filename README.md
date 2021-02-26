@@ -1,7 +1,7 @@
 ---
 home: true
-heroText: LeeDX的博客
-tagline: A simple and beautiful vuepress blog theme.
+heroText: Dongxu 的博客
+tagline: 不以物喜，不以己悲.
 # heroImage: /hero.png
 # heroImageStyle: {
 #   maxWidth: '600px',
