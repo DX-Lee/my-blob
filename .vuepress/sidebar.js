@@ -1,6 +1,6 @@
 const { createSideBarConfig } = require('./util')
 
-const JAVASCRIPT_PATH = '/blogs/javascript/'
+const JAVASCRIPT_PATH = '/blogs/javascript'
 const BROWSER_PATH = '/blogs/browser'
 const CSS_PATH = '/blogs/css'
 const HTML_PATH = '/blogs/html'
@@ -13,21 +13,22 @@ const OTHER_PATH = 'blogs/other'
 const VUE_PATH = 'blogs/vue'
 module.exports = {
   [JAVASCRIPT_PATH]: [
-    createSideBarConfig('JS-基础', JAVASCRIPT_PATH + 'js-base'),
-    createSideBarConfig('JS-DOM', JAVASCRIPT_PATH + 'js-dom'),
-    createSideBarConfig('JS-BOM', JAVASCRIPT_PATH + 'js-bom')
+    createSideBarConfig('JS-基础', JAVASCRIPT_PATH + '/js-base'),
+    createSideBarConfig('JS-DOM', JAVASCRIPT_PATH + '/js-dom'),
+    createSideBarConfig('JS-BOM', JAVASCRIPT_PATH + '/js-bom')
   ],
   [CSS_PATH]: [
     createSideBarConfig('CSS系列', CSS_PATH)
   ],
   [HTML_PATH]: [
-    createSideBarConfig('html', HTML_PATH)
+    createSideBarConfig('HTML相关', HTML_PATH)
   ],
   [BROWSER_PATH]: [
     createSideBarConfig('浏览器相关', BROWSER_PATH)
   ],
   [NET_PATH]: [
-    createSideBarConfig('网络协议', NET_PATH)
+    createSideBarConfig('HTTP协议', NET_PATH + '/http'),
+    createSideBarConfig('TCP协议', NET_PATH + '/tcp')
   ],
   [ALGORITHM_PATH]: [
     createSideBarConfig('算法系列', ALGORITHM_PATH)
