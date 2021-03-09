@@ -1,6 +1,8 @@
 ---
 title: TCP Time_Wait
 date: 2020-1-9
+tags:
+ - TCP
 categories:
  - 网络协议
 ---

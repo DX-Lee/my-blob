@@ -10,12 +10,10 @@ const PERFORMANCE_PATH = '/blogs/performance'
 const INTERVIEW_PATH = 'blogs/interview'
 const DAILY_PATH = 'blogs/daily'
 const OTHER_PATH = 'blogs/other'
-const VUE_PATH = 'blogs/vue'
+const FRAME_PATH = 'blogs/frame'
 module.exports = {
   [JAVASCRIPT_PATH]: [
-    createSideBarConfig('JS-基础', JAVASCRIPT_PATH + '/js-base'),
-    createSideBarConfig('JS-DOM', JAVASCRIPT_PATH + '/js-dom'),
-    createSideBarConfig('JS-BOM', JAVASCRIPT_PATH + '/js-bom')
+    createSideBarConfig('JavaSript-基础', JAVASCRIPT_PATH)
   ],
   [CSS_PATH]: [
     createSideBarConfig('CSS系列', CSS_PATH)
@@ -42,8 +40,9 @@ module.exports = {
   [DAILY_PATH]: [
     createSideBarConfig('日常', DAILY_PATH)
   ],
-  [VUE_PATH]: [
-    createSideBarConfig('vue框架', VUE_PATH)
+  [FRAME_PATH]: [
+    createSideBarConfig('Vue框架', FRAME_PATH + '/vue'),
+    createSideBarConfig('React框架', FRAME_PATH + '/react')
   ],
   [OTHER_PATH]: [
     createSideBarConfig('杂项', OTHER_PATH)

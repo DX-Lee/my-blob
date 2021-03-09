@@ -1,6 +1,8 @@
 ---
 title: MTU和MSS
 date: 2020-12-21
+tags:
+ - TCP
 categories:
  - 网络协议
 ---

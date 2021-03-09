@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // 前序遍历
+  function foo (root) {
+    let res = []
+    if (!root) {
+      return root
+    }
+    let stack = [root]
+    while(stack.length) {
+      let temp = stack.pop()
+      res.push(temp.val)
+      if (temp.right) {
+        tack.push(temp.right)
+      }
+      if (temp.left) {
+        stack.push(temp.left)
+      }
+    }
+    return res
+  }
+  // 中序遍历
+  function foo1 (root) {
+    let res = []
+    let stack = []
+    if (!root) {
+      return root
+    }
+    stack.push(root)
+    while(stack.length) {
+      let cur = stack.pop()
+      res.unshift(cur.val)
+      if (res.left) {
+        stack.push(re.left)
+      }
+      if (res.right) {
+        stack.push(res.right)
+      }
+    }
+    return res
+  }
+  // 后序遍历
+  function foo2 (root) {
+    let res = []
+    let stack = []
+    let cur = root
+    while(cur || stack.length) {
+      while (cur) {
+        stack.push(cur)
+        cur = cur.left
+      }
+      cur = stack.pop()
+      res.push(cur.val)
+      cur = cur.right
+    }
+  }
+  // 层次遍历
+  function foo4 (root) {
+    if (!root) {
+      return root
+    }
+    let res = []
+    let queue = [root]
+    while (queue.length) {
+      let len = queue.length
+      let list = []
+      while(len--) {
+        let cur = queue.unshift()
+        list.push(cur.val)
+        if (cur.left) {
+          queue.push(cur.left)
+        }
+        if (cur.right) {
+          queue.push(cur.right)
+        }
+      }
+      res.push(list)
+    }
+    return res
+  }
+  // 反转二叉树
+  function foo5 (root) {
+    if (!root) {
+      return root
+    }
+    let left = foo5(root.right)
+    let right = foo5(root.left)
+    root.left = left
+    root.right = right
+    return root
+  }
+  // 二叉搜索树 增加节点
+  function addNode (root, val) {
+    if (!root) {
+      root = new ListNode(val)
+      return root
+    }
+    if (root.val > val) {
+      root.left = addNode(root.left, val)
+    } else {
+      root.right = addNode(root.right, val)
+    }
+    return root
+  }
+  // 二叉搜索树 删除节点
+  function deleteNode (root, val) {
+    if (!root) {
+      return root
+    }
+    if (root.val === val) {
+      if(!root.left&&!root.right) {
+        root = null
+        return
+      } else if (root.left) {
+        let cur = root.left
+        while(cur.right) {
+          cur = cur.right
+        }
+        root.left.val = cur.val
+        root.left = deleteNode(root.left, cur.val)
+
+      } else {
+        let cur = root.right
+        while(cur.left) {
+          cur = cur.left
+        }
+        root.right.val = cur.val
+        root.right = deleteNode(root.right, cur.val)
+      }
+    } else if (root.val < val) {
+      root.right = deleteNode(root.right, val)
+    } else {
+      root.left = deleteNode(root.left, val)
+    }
+    return root
+  }
+
+  // 判断是否时二叉搜索树
+  function isTree (root) {
+    function dfs (root, minval, maxval) {
+      if (!root) {
+        return true
+      }
+      if (root.val < minval || root.val > maxval) {
+        return false
+      }
+      return dfs(root.left, minval, root.val) && dfs(root.right, root.val, maxval)
+    }
+    return dfs(root, -Infinity, Infinity)
+  }
+  // 判断平衡二叉树 即二叉树左右子树的高度不超过一
+  function BalanceTree (root) {
+    let flag = true
+    function dfs(root) {
+      if (!root) {
+        return 0
+      }
+      let left = dfs(root.left)
+      let right = dfs(root.right)
+      if (Math.abs(left - right) > 1) {
+        flag = false
+        return 0
+      }
+      return Math.max(left, right) + 1
+    }
+    dfs(root)
+    return flag
+  }
+  // 将二叉搜索树改为平衡二叉搜索树
+  function toTree (root) {
+    let arr = []
+    function inorder(root) {
+      if (!root) {
+        return root
+      }
+      inorder(root.left)
+      arr.push(root.val)
+      inorder(root.right)
+    }
+    function Balance (left, right) {
+      if (left > right) {
+        return null
+      }
+      let root = new TreeNode()
+      let mid = Math.floor(left + (right - left) / 2)
+      root.left = Balance(left, mid - 1)
+      root.val = arr[mid]
+      root.right = Balance(mid+1, right)
+      return root
+    }
+    inorder(root)
+    return Balance(0, arr.length - 1)
+  }
+
+  // 堆结构 去对顶元素操作
+  function downHeap (low, high) {
+    let i = low, j = 2 * i + 1
+    while (j <= high) {
+      if (j + 1 < high && heap[j+1] > heap[j]) {
+        j = j+1
+      }
+      if (heap[i] < heap[j]) {
+        let temp = heap[i]
+        heap[i] = heap[j]
+        heap[j] = heap[i]
+        i = j
+        j = 2 *j + 1
+      } else {
+        break
+      }
+    }
+  }
+  // 添加元素
+  function upHeap (low, high) {
+    let i = high, j = Math.floor((i - 1) / 2)
+    while (j >= low) {
+      if (heap[j] < heap[i]) {
+        let temp = heap[j]
+        heap[j] = heap[i]
+        heap[i] = temp
+        i = j
+        j = Math.floor((i - 1) / 2)
+      } else {
+        break
+      }
+    }
+  }
+
+  // 找出前 k 大的元素
+  function find (nums, k) {
+    let heap = []
+    let index = 0
+    for (let i = 0; i < k; i++) {
+      heap[index] = nums[i]
+      upHeap(0, index)
+      index++
+    }
+    for (let i = k; i < nums.length; i++) {
+      if (nums[i] > heap[0]) {
+        heap[0] = nums[i]
+        downHeap(0, k)
+      }
+    }
+    return heap[0]
+  }
+  </script>
+</body>
+</html>

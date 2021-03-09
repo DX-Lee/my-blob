@@ -1,6 +1,8 @@
 ---
 title: 端口号
 date: 2020-12-21
+tags:
+ - TCP
 categories:
  - 网络协议
 ---
